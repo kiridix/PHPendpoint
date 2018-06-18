@@ -1,0 +1,12 @@
+.main{
+	width: 50%;
+	text-align: center;
+}
+.value{
+	width: 49%;
+	display: inline-block !important;
+	text-align: left;
+}
+.result{
+	text-align: left;
+}
