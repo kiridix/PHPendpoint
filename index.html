@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var js = {values: {x:2, y:3}, operation: "division"};
+	var js = JSON.stringify(js);
+$.ajax({
+    type: "POST",
+    url: "api.php",
+    datatype: "string",
+    data: "request=" + js,
+    success: function(data) {
+        var response = JSON.parse(data);
+		console.log(response);
+        console.log(response.result);
+        console.log(response.status);
+    }
+});
+    </script>
+</head>
+<body>
+
+</body>
+</html>
