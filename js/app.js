@@ -10,7 +10,7 @@ $().ready(function(){
             var js = JSON.stringify(js);
          $.ajax({
             type: "POST",
-            url: "api.php",
+            url: "../api.php",
             datatype: "string",
             data: "request=" + js,
             success: function(data) {
